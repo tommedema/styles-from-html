@@ -1,0 +1,33 @@
+{
+  "name": "styles-from-html",
+  "version": "1.0.0",
+  "description": "Given html, will return all css styles from style tags as a concatenated string, as well as the resulting html with these style tags removed. Useful when you need to pass in css that is separated from html to another library while having declared css rules within embedded html documents (e.g. for request performance optimization).",
+  "summary": "Given html, will return all css styles from style tags as a concatenated string, as well as the resulting html with these style tags removed.",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "./node_modules/standard/bin/cmd.js && ./node_modules/mocha/bin/mocha",
+    "standard": "./node_modules/standard/bin/cmd.js",
+    "standard fix": "./node_modules/standard/bin/cmd.js --fix",
+    "docs": "./node_modules/documentation/bin/documentation.js lint src/** && ./node_modules/documentation/bin/documentation.js build src/** -f md >> README.md"
+  },
+  "keywords": [
+    "html",
+    "css",
+    "style",
+    "tag",
+    "stylesheet",
+    "parse",
+    "grab",
+    "get",
+    "separate",
+    "rule"
+  ],
+  "author": "Tom Medema",
+  "license": "MIT",
+  "devDependencies": {
+    "documentation": "^5.3.2",
+    "mocha": "^3.5.3",
+    "should": "^13.0.1",
+    "standard": "^10.0.3"
+  }
+}
