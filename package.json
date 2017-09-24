@@ -1,9 +1,15 @@
 {
   "name": "styles-from-html",
   "version": "1.0.0",
+  "homepage": "https://github.com/tommedema/styles-from-html",
+  "bugs": {
+    "url": "https://github.com/tommedema/styles-from-html/issues",
+    "email": "tommedema@gmail.com"
+  },
   "description": "Given html, will return all css styles from style tags as a concatenated string, as well as the resulting html with these style tags removed. Useful when you need to pass in css that is separated from html to another library while having declared css rules within embedded html documents (e.g. for request performance optimization).",
   "summary": "Given html, will return all css styles from style tags as a concatenated string, as well as the resulting html with these style tags removed.",
   "main": "src/index.js",
+  "repository": "git@github.com:tommedema/styles-from-html.git",
   "scripts": {
     "test": "./node_modules/standard/bin/cmd.js && ./node_modules/mocha/bin/mocha",
     "standard": "./node_modules/standard/bin/cmd.js",
@@ -22,7 +28,10 @@
     "separate",
     "rule"
   ],
-  "author": "Tom Medema",
+  "author": {
+    "name": "Tom Medema",
+    "email": "tommedema@gmail.com"
+  },
   "license": "MIT",
   "devDependencies": {
     "documentation": "^5.3.2",
