@@ -47,4 +47,10 @@ describe('styles-from-html', () => {
     const styles = stylesFromHtml(html)
     styles.html.should.equal(outHtml)
   })
+  it('should return resulting html with newlines as-is', () => {
+    const html = getHtml('newlines')
+    const outHtml = getOutHtml('newlines')
+    const styles = stylesFromHtml(html)
+    styles.html.should.equal(outHtml)
+  })
 })
